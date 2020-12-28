@@ -1,5 +1,11 @@
 "use strict";
+
+
+var yourName = prompt(' Enter your name')
+alert ('Hello ' + yourName + ' ')
+
 var myFirstQ = prompt ("Do you think I love animals? Yes or No")
+// console.log(myFirstQ)
 if (myFirstQ.toLowerCase === 'yes') {
     alert('your guessing is false. I dont love animals :(')
 } else if (myFirstQ.toLowerCase === 'no') {
@@ -11,6 +17,7 @@ if (myFirstQ.toLowerCase === 'yes') {
 alert('Time for the second question dear')
 
 var secQ = prompt("Have I ever lost someone close? Yes or No")
+// console.log(secQ)
 if (secQ.toLowerCase === 'yes') {
     alert('Yes, I lost :(')
 } else if (secQ.toLowerCase === 'no') {
@@ -20,30 +27,33 @@ if (secQ.toLowerCase === 'yes') {
 
 }
 
-var secQ = prompt("Do I like to exercise? Yes or No")
-if (secQ.toLowerCase === 'yes') {
+var thiQ = prompt("Do I like to exercise? Yes or No")
+// console.log(thiQ)
+if (thiQ.toLowerCase === 'yes') {
     alert('Yes I exercise every day ')
-} else if (secQ.toLowerCase === 'no') {
+} else if (thiQ.toLowerCase === 'no') {
     alert('You are incorrect :( I love sport :)')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
 
 }
 
-var secQ = prompt("Do I know how to play a musical instrument? Yes or No")
-if (secQ.toLowerCase === 'yes') {
+var fourQ = prompt("Do I know how to play a musical instrument? Yes or No")
+// console.log(fourQ)
+if (fourQ.toLowerCase === 'yes') {
     alert('Unfortunately, I dont know how to play')
-} else if (secQ.toLowerCase === 'no') {
+} else if (fourQ.toLowerCase === 'no') {
     alert('You are correct ')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
 
 }
 
-var secQ = prompt("Have you cheated in a game? Yes or No")
-if (secQ.toLowerCase === 'yes') {
+var fiveQ = prompt("Have you cheated in a game? Yes or No")
+// console.log(fiveQ)
+if (fiveQ.toLowerCase === 'yes') {
     alert('For sure :)')
-} else if (secQ.toLowerCase === 'no') {
+} else if (fiveQ.toLowerCase === 'no') {
     alert('are sure? of course i cheated :)')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
