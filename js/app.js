@@ -2,13 +2,13 @@
 
 
 var yourName = prompt(' Enter your name')
-alert ('Hello ' + yourName + ' ')
+alert ('Hello ' + yourName + ' you have a very beautiful name :) ')
 
 var myFirstQ = prompt ("Do you think I love animals? Yes or No")
 // console.log(myFirstQ)
-if (myFirstQ.toLowerCase === 'yes') {
+if (myFirstQ.toLowerCase() === 'yes') {
     alert('your guessing is false. I dont love animals :(')
-} else if (myFirstQ.toLowerCase === 'no') {
+} else if (myFirstQ.toLowerCase() === 'no') {
     alert('You are rigth')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
@@ -18,9 +18,9 @@ alert('Time for the second question dear')
 
 var secQ = prompt("Have I ever lost someone close? Yes or No")
 // console.log(secQ)
-if (secQ.toLowerCase === 'yes') {
+if (secQ.toLowerCase() === 'yes') {
     alert('Yes, I lost :(')
-} else if (secQ.toLowerCase === 'no') {
+} else if (secQ.toLowerCase() === 'no') {
     alert('Your guessing is false ')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
@@ -29,9 +29,9 @@ if (secQ.toLowerCase === 'yes') {
 
 var thiQ = prompt("Do I like to exercise? Yes or No")
 // console.log(thiQ)
-if (thiQ.toLowerCase === 'yes') {
+if (thiQ.toLowerCase() === 'yes') {
     alert('Yes I exercise every day ')
-} else if (thiQ.toLowerCase === 'no') {
+} else if (thiQ.toLowerCase() === 'no') {
     alert('You are incorrect :( I love sport :)')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
@@ -40,9 +40,9 @@ if (thiQ.toLowerCase === 'yes') {
 
 var fourQ = prompt("Do I know how to play a musical instrument? Yes or No")
 // console.log(fourQ)
-if (fourQ.toLowerCase === 'yes') {
+if (fourQ.toLowerCase() === 'yes') {
     alert('Unfortunately, I dont know how to play')
-} else if (fourQ.toLowerCase === 'no') {
+} else if (fourQ.toLowerCase() === 'no') {
     alert('You are correct ')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
@@ -51,13 +51,14 @@ if (fourQ.toLowerCase === 'yes') {
 
 var fiveQ = prompt("Have you cheated in a game? Yes or No")
 // console.log(fiveQ)
-if (fiveQ.toLowerCase === 'yes') {
+if (fiveQ.toLowerCase() === 'yes') {
     alert('For sure :)')
-} else if (fiveQ.toLowerCase === 'no') {
+} else if (fiveQ.toLowerCase() === 'no') {
     alert('are sure? of course i cheated :)')
 } else {
     alert('It is a yes no question make sure to choose one of them only')
 
 }
 
+alert( 'Thank you ' + yourName + ' you did amazing job')
 
