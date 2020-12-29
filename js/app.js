@@ -60,13 +60,22 @@ if (fourQ.toLowerCase() === 'yes') {
 
                 }
 
-alert('Thank you ' + yourName + ' you did amazing job')
+alert('Thank you ' + yourName + ' you did amazing job');
 
-alert(' well ' + yourName + 'know I am thinking of a number between 1 and 20')
-var maxGuesses = 4;
-var myNumber = prompt("Take a guess")
-if (myNumber > 11 ) {
-    prompt("Your guess is too high")
-} else if (myNumber < 5 ) {
-    prompt("Your guess is too low")
+alert(' well ' + yourName + 'know I am thinking of a number between 1 and 20');
+
+for (var i =1; i <= 4; i++ ){
+    const guessNum = 15
+    var yourGuess = prompt("Try Guess")
+    if (yourGuess === guessNum) {
+        alert(" your guessing is corre")
+    } else if ( yourGuess > 15) {
+        alert("too high")
+    } else if ( yourGuess < 14) {
+        alert("too low")
+
+    } else {
+        alert ("Try again")
+    }  
+
 }
