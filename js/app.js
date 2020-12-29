@@ -49,16 +49,24 @@ if (fourQ.toLowerCase() === 'yes') {
 
 }
 
-var fiveQ = prompt("Have you cheated in a game? Yes or No")
-// console.log(fiveQ)
-if (fiveQ.toLowerCase() === 'yes') {
-    alert('For sure :)')
-} else if (fiveQ.toLowerCase() === 'no') {
-    alert('are sure? of course i cheated :)')
-} else {
-    alert('It is a yes no question make sure to choose one of them only')
+    var fiveQ = prompt("Have you cheated in a game? Yes or No")
+    // console.log(fiveQ)
+    if (fiveQ.toLowerCase() === 'yes') {
+        alert('For sure :)')
+    } else if (fiveQ.toLowerCase() === 'no') {
+        alert('are sure? of course i cheated :)')
+    } else {
+        alert('It is a yes no question make sure to choose one of them only')
 
-}
+                }
 
 alert('Thank you ' + yourName + ' you did amazing job')
 
+alert(' well ' + yourName + 'know I am thinking of a number between 1 and 20')
+var maxGuesses = 4;
+var myNumber = prompt("Take a guess")
+if (myNumber > 11 ) {
+    prompt("Your guess is too high")
+} else if (myNumber < 5 ) {
+    prompt("Your guess is too low")
+}
