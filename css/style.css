@@ -1,14 +1,29 @@
 
 body {
-    background-image: url(https://vitadaily.ca/wp-content/uploads/2020/08/sunset.jpg);
-}
+    background-image: url(https://wallpaperaccess.com/full/144463.jpg);
 
-p {
-    color: black;
-    font-style: normal;
-   margin-top: 50px;
-   font-family: Lucida Calligraphy;
-}
+    }
 
-	
+    p {
+        color:black;
+        font-style: normal;
+    margin-top: 50px;
+    text-align: center;
+    font-family:Lucida Calligraphy;
+    }
+  
+   
+    ol, li , ul {
+         background-color: rgb(177, 110, 110);
+         color: white;
+        padding-left: 30px;
+        margin: 20px;
+    }
+    ul , ol {
+        display: inline-block;
+        zoom: 1
+        }
+
+
+
 
