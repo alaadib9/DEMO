@@ -94,11 +94,11 @@ for (var i = 1; i <= 4; i++) {
 alert("the number is 15");
 
 for (var i = 1; i <= 6; i++) {
-    var colorsFav = [red, yellow, blue, black , gold , pink ]
-    var sevenQue = prompt("what is my favorite color ? red , yellow , blue , black ")
+    var sevenQue = prompt("what is my favorite color ? red , yellow , blue , black , gold , pink ")
     if (sevenQue.toLowerCase() === 'red'|| 'yellow' || 'black' || 'gold' || 'pink') {
         alert("No. Try again ")
-    } else { alert(" Yes I adore blue color");
+    } else if (sevenQue.toLowerCase() === 'blue') { 
+        alert(" Yes I adore blue color");
         numCorrect +=1
 
     }
