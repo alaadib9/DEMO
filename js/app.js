@@ -104,6 +104,7 @@ for (var i = 1; i <= 6; i++) {
     } else if (sevenQue.toLowerCase() === colorArray[5]) {
         alert(" Yes I adore blue color");
         numCorrect += 1
+        break;
 
     }
 }
