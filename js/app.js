@@ -45,14 +45,14 @@ function secondQ() {
 }
 secondQ();
 
-var thirQ = prompt("Do I like to exercise? Yes or No")
-console.log(thiQ)
+var thirdQ = prompt("Do I like to exercise? Yes or No")
+console.log(thirdQ)
 function thirQ() {
-    if (thiQ.toLowerCase() === 'yes') {
+    if (thirdQ.toLowerCase() === 'yes') {
         //console.log('Yes I exercise every day')
         alert('Yes I exercise every day ')
         numCorrect += 1;
-    } else if (thirQ.toLowerCase() === 'no') {
+    } else if (thirdQ.toLowerCase() === 'no') {
         //console.log('You are incorrect :( I love sport :)')
         alert('You are incorrect :( I love sport :)')
     } else {
@@ -82,7 +82,7 @@ fourthQ();
 
 var fiveQ = prompt("Have I cheated in a game? Yes or No")
 console.log(fiveQ)
-function fivQ() {
+function fifthQ() {
     if (fiveQ.toLowerCase() === 'yes') {
         //console.log('For sure :)')
         alert('For sure :)')
@@ -92,7 +92,7 @@ function fivQ() {
         alert('are sure? of course i cheated :)')
     }
 }
-fiveQ();
+fifthQ();
 
 alert('Thank you ' + yourName + ' you did amazing job');
 
@@ -126,33 +126,35 @@ sixthQ();
 var correctArray = ['black', 'pink', 'blue'];
 var correct = false
 function sevenQ() {
-    for (var i = 1; i <= 6; i++) {
-        var sevenQue = prompt("what is my favorite color ? ");
-        console.log(sevenQue);
+    for (var i = 0; i < 6; i++) {
+        var sevQ = prompt("What is my favourite color?");
+        console.log(sevQ);
         for (let index = 0; index < correctArray.length; index++) {
-            if (sevenQue.toLowerCase() === correctArray[index]) {
-                //console.log("yes it's true ")
-                alert("yes it's true ");
-                numCorrect += 1
+            if (sevQ.toLowerCase() === correctArray[index]) {
+                //console.log("You got it right!")
+                alert("You got it right!");
+                numCorrect++;
                 correct = true;
                 break;
+
             }
 
+
         }
-    } if (correct===true) {
-        break;
+if (correct===true){
+    break;
+}            
+
     }
 
 
 
 }
 
+
 sevenQ();
 
-alert ("The possible answers were black, pink, blue")
-alert("Your score is " + numCorrect)
-alert ("Thank you " +yourName)
-
-
-
+alert("The possible answers were black, pink, blue");
+alert("Your score is " + numCorrect);
+alert("Thank you " + yourName)
 
