@@ -4,6 +4,7 @@ var numCorrect = 0;
 var yourName = prompt(' Enter your name')
 alert('Hello ' + yourName + ' you have a very beautiful name :) ')
 
+function firstQ () {
 var myFirstQ = prompt("Do you think I love animals? Yes or No")
 // console.log(myFirstQ)
 if (myFirstQ.toLowerCase() === 'yes') {
@@ -13,25 +14,35 @@ if (myFirstQ.toLowerCase() === 'yes') {
     numCorrect += 1;
 } else {
 }
+}
 
+
+firstQ();
 
 
 alert('Time for the second question dear')
 
-var secQ = prompt("Have I ever lost someone close? Yes or No")
+var secQ = prompt("Have I ever lost someone close? Yes or No").toLowerCase()
 // console.log(secQ)
-if (secQ.toLowerCase() === 'yes') {
+switch (secQ) {
+  case 'yes':
     alert('Yes, I lost :(')
     numCorrect += 1;
-} else if (secQ.toLowerCase() === 'no') {
-    alert('Your guessing is false ')
-} else {
-    alert('It is a yes no question make sure to choose one of them only')
+    break;
+  case'no':
+    alert('Your guessing is false ');
+    break;
+   default:
+       if (secQ !== 'yes' || secQ !=='no')
+       { 
+    alert('It is a yes no question make sure to choose one of them only');
+     }
 
 }
 
 var thiQ = prompt("Do I like to exercise? Yes or No")
 // console.log(thiQ)
+function thirQ () {
 if (thiQ.toLowerCase() === 'yes') {
     alert('Yes I exercise every day ')
     numCorrect += 1;
@@ -42,9 +53,12 @@ if (thiQ.toLowerCase() === 'yes') {
     alert('It is a yes no question make sure to choose one of them only')
 
 }
+}
+thirQ();
 
 var fourQ = prompt("Do I know how to play a musical instrument? Yes or No")
 // console.log(fourQ)
+function fourthQ(){
 if (fourQ.toLowerCase() === 'yes') {
     alert('Unfortunately, I dont know how to play')
 } else if (fourQ.toLowerCase() === 'no') {
@@ -55,9 +69,12 @@ if (fourQ.toLowerCase() === 'yes') {
     alert('It is a yes no question make sure to choose one of them only')
 
 }
+}
+fourthQ();
 
 var fiveQ = prompt("Have I cheated in a game? Yes or No")
 // console.log(fiveQ)
+function fivQ (){
 if (fiveQ.toLowerCase() === 'yes') {
     alert('For sure :)')
     numCorrect += 1;
@@ -66,9 +83,13 @@ if (fiveQ.toLowerCase() === 'yes') {
 } else {
 
 }
+}
+fiveQ();
+
 alert('Thank you ' + yourName + ' you did amazing job');
 
 alert(' well ' + yourName + ' know I am thinking of a number between 1 and 20');
+
 
 for (var i = 1; i <= 4; i++) {
     const guessNum = 15
