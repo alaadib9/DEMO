@@ -14,7 +14,5 @@ I build a web page that asks a user to enter his/her name,I wrote it to ask you 
 1) Wrap the first, third, forth and fifth question in a function
 2) use switch on second question
 
-
-## Driver: Tala Jalald
+## Driver: Tala Jallad
 ## Navigator: Alaa Dib
-
