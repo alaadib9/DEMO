@@ -10,4 +10,9 @@ I build a web page that asks a user to enter his/her name,I wrote it to ask you 
 2) edit js file by add a new 2 qustions using loops and if statments
 3) add css 
 
+# New feature I added to Lab04 by Alaa and Tala:
+1) Wrap the first, third, forth and fifth question in a function
+2) use switch on second question
 
+## Driver: Tala Jallad
+## Navigator: Alaa Dib
