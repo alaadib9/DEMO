@@ -11,8 +11,10 @@ I build a web page that asks a user to enter his/her name,I wrote it to ask you 
 3) add css 
 
 # New feature I added to Lab04 by Alaa and Tala:
-1) Wrap the first, third, forth and fifth question in a function
+1) Wrap all questions in functions
 2) use switch on second question
+3)add console logs
+4) fix the nested for loop in question 7
 
 ## Driver: Tala Jallad
 ## Navigator: Alaa Dib
