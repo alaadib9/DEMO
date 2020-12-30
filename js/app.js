@@ -91,22 +91,23 @@ for (var i = 1; i <= 4; i++) {
 
 alert("the number is 15");
 
+var correctArray = ['black','pink','blue'];
 for (var i = 1; i <= 6; i++) {
-    var sevenQue = prompt("what is my favorite color ? red,yellwo,black, gold, pink, blue ")
-    console.log(sevenQue)
-    var colorArray = ['red','yellwo','black','gold','pink','blue'];
-    if (sevenQue.toLowerCase() === colorArray[0] ||
-        sevenQue.toLowerCase() === colorArray[1] ||
-        sevenQue.toLowerCase() === colorArray[2] ||
-        sevenQue.toLowerCase() === colorArray[3] ||
-        sevenQue.toLowerCase() === colorArray[4]) {
-        alert("No. Try again ")
-    } else if (sevenQue.toLowerCase() === colorArray[5]) {
-        alert(" Yes I adore blue color");
+    var sevenQue = prompt("what is my favorite color ? red,yellwo,black, gold, pink, blue ");
+    console.log(sevenQue);
+    for (let index = 0; index < correctArray.length; index++) {
+    } if (sevenQue.toLowerCase() === correctArray[index] ){
+        alert("yes it's true ");
         numCorrect += 1
-        break;
+       index = correctArray.length
+        i =6;
+} else {
+    alert("Try again");
+}
+   
+   
+    
 
-    }
 }
 prompt("Your score is " + numCorrect)
 
