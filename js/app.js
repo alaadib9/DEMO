@@ -1,5 +1,15 @@
 "use strict";
 
+function ifCorrect() {
+    alert("You are correct");
+}
+function ifIncorrect() {
+    alert("You are incorrect");
+}
+function notYesOrNo() {
+    alert("It is a yes no question make sure to choose one of them only")
+}
+
 var numCorrect = 0;
 var yourName = prompt(' Enter your name')
 alert('Hello ' + yourName + ' you have a very beautiful name :) ')
@@ -9,16 +19,15 @@ while (checkOne) {
     var myFirstQ = prompt("Do you think I love animals? Yes or No");
 
     if (myFirstQ.toLowerCase() === 'yes' || myFirstQ.toLowerCase() === 'y') {
+        ifIncorrect();
 
-        alert('your guessing is false. I dont love animals :(');
         checkOne = false;
     } else if (myFirstQ.toLowerCase() === 'no' || myFirstQ.toLowerCase() === 'n') {
-
-        alert('You are right');
+        ifCorrect();
         numCorrect += 1;
         checkOne = false;
     } else {
-        alert("please make sure to answer the question");
+        notYesOrNo();
     }
 }
 
@@ -28,37 +37,36 @@ secondQ();
 function secondQ() {
     var secQ = prompt("Have I ever lost someone close? Yes or No").toLowerCase();
     switch (secQ) {
-        case 'yes'://if
+        case 'yes':
         case 'y':
-            alert('Yes, I lost :(')
+            ifCorrect();
             numCorrect += 1;
             break;
-        case 'no'://else if
+        case 'no':
         case 'n':
-            alert('Your guessing is false ');
+            ifIncorrect();
             break;
-        default:// else
-            alert('It is a yes no question make sure to choose one of them only');
+        default:
+            notYesOrNo();
             secondQ();
-            
+
 
     }
 }
 
 var check2 = true;
-while (check2 ){
+while (check2) {
 
     var thirdQ = prompt("Do I like to exercise? Yes or No");
-
     if (thirdQ.toLowerCase() === 'yes' || thirdQ.toLowerCase() === 'y') {
-        alert('Yes I exercise every day ');
+        ifCorrect();
         numCorrect += 1;
-        check2=false;
-    } else if (thirdQ.toLowerCase() === 'no' ||thirdQ.toLowerCase() === 'n') {
-        alert('You are incorrect :( I love sport :)');
-        check2=false;
+        check2 = false;
+    } else if (thirdQ.toLowerCase() === 'no' || thirdQ.toLowerCase() === 'n') {
+        ifIncorrect();
+        check2 = false;
     } else {
-        alert('It is a yes no question make sure to choose one of them only');
+        notYesOrNo();
 
     }
 }
@@ -68,14 +76,13 @@ fourthQ();
 function fourthQ() {
     var fourQ = prompt("Do I know how to play a musical instrument? Yes or No");
     if (fourQ.toLowerCase() === 'yes' || fourQ.toLowerCase() === 'y') {
-        
         alert('Unfortunately, I dont know how to play');
-    } else if (fourQ.toLowerCase() === 'no'|| fourQ.toLowerCase() === 'n') {
-        alert('You are correct ');
+    } else if (fourQ.toLowerCase() === 'no' || fourQ.toLowerCase() === 'n') {
+        ifCorrect();
         numCorrect += 1;
 
     } else {
-        alert('It is a yes no question make sure to choose one of them only');
+        notYesOrNo();
         fourthQ();
 
     }
@@ -86,11 +93,12 @@ fifthQ();
 function fifthQ() {
     var fiveQ = prompt("Have I cheated in a game? Yes or No");
     if (fiveQ.toLowerCase() === 'yes' || fiveQ.toLowerCase() === 'y') {
-        alert('For sure :)');
+      ifCorrect();
         numCorrect += 1;
     } else if (fiveQ.toLowerCase() === 'no' || fiveQ.toLowerCase() === 'n') {
-        alert('are sure? of course i cheated :)');
+        ifIncorrect();
     } else {
+        notYesOrNo();
         fifthQ();
     }
 }
@@ -102,23 +110,23 @@ alert(' well ' + yourName + ' now I am thinking of a number between 1 and 20');
 
 function sixthQ() {
     for (var i = 0; i <= 4; i++) {
-        const guessNum = 15;
+        const guessNum = 8;
         var yourGuess = parseInt(prompt("Try Guess"));
         console.log(yourGuess);
         if (yourGuess === guessNum) {
             alert(" your guessing is correct");
             numCorrect += 1;
             break;
-        } else if (yourGuess > 15) {
+        } else if (yourGuess > 8) {
             alert("too high");
-        } else if (yourGuess < 14) {
+        } else if (yourGuess < 8) {
             alert("too low");
 
         }
-    
+
 
     } if (i === 4) {
-        alert("You ran out of guesses. The number is 15");
+        alert("You ran out of guesses. The number is 8");
     }
 }
 sixthQ();
